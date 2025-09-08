@@ -126,7 +126,57 @@
             margin-left: auto;
             margin-right: auto;
         }
-    </style>
+    /* Post Navigation Styles */
+        .post-navigation {
+            display: flex;
+            flex-direction: column; /* 세로 정렬 */
+            gap: 10px; /* 링크 사이 간격 */
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .post-link {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 0.95em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .post-link:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+        }
+
+        .post-link .arrow {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .post-link.prev {
+            justify-content: flex-start;
+        }
+
+        .post-link.next {
+            justify-content: flex-end;
+        }
+
+        .post-link.prev .arrow {
+            transform: none; /* ▲ 기본 방향 */
+            margin-left: -5px; /* 화살표가 더 붙도록 조정 */
+        }
+
+        .post-link.next .arrow {
+            transform: none; /* ▼ 기본 방향 */
+            margin-right: -5px; /* 화살표가 더 붙도록 조정 */
+        }  </style>
 </head>
 <body>
 
@@ -163,7 +213,10 @@
         <p>시노펙스는 2025년에도 지속적인 연구 개발과 투자를 통해 △FPCB 검사 자동화 확대 적용, △보강판 적층 공정 자동화를 진행할 예정이며, 업계 최초로 △자동화된 EMI 시트 부착 공정을 적용할 계획입니다.</p>
         <p>시노펙스는 글로벌 기업인 삼성전자의 1차 협력사로 축적된 기술을 기반으로 FPCB와 멤브레인 필터 기술을 융합한 인공신장기 관련 의료기기 분야로 사업 확대를 추진하고 있습니다.</p>
     </div>
-</div>
+  <div class="post-navigation">
+        <a href="https://goodlight1234.github.io/news10/" class="post-link prev"><span class="arrow">▲</span> 시노펙스, 경상북도와 산불피해지 ‘탄소중립 숲’ 조성 사업 추진! </a>
+        <a href="https://goodlight1234.github.io/news12/" class="post-link next">시노펙스, ENVEX 2025(환경·탄소중립 기술 전시회) 참가!<span class="arrow">▼</span></a>
+    </div></div>
 
 </body>
 </html>
